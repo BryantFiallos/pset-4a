@@ -14,4 +14,5 @@ while (number < 1 || number > Number.MAX_SAFE_INTEGER || Number.isNaN(number) ||
   number /= 10;
  }
 
+
  console.log(reversed);
