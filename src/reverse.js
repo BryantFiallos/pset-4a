@@ -17,12 +17,3 @@ while (number < 1 || number > Number.MAX_SAFE_INTEGER || Number.isNaN(number) ||
 
 reversed = reversed + number + "."
  console.log(reversed);
-
-
-
-
-
-reversed *= 10;
-reversed += number % 10;
-number -= number % 10;
-number /= 10;
