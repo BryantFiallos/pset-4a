@@ -1,18 +1,28 @@
 const readlineSync = require("readline-sync")
 
-let reversed = 0;
+let reversed = "";
+let digit = 0;
 let number = Number(readlineSync.question("\nPositive integer: "));
 
 while (number < 1 || number > Number.MAX_SAFE_INTEGER || Number.isNaN(number) || !Number.isInteger(number)) {
   number = Number(readlineSync.question("Positive integer: "))
 }
 
- while (number != 0) {
-  reversed *= 10;
-  reversed += number % 10;
-  number -= number % 10;
-  number /= 10;
+ while (number > 10) {
+   digit = number % 10;
+   reversed = reversed + digit + ", ";
+   number -= number % 10;
+   number /= 10;
  }
 
-
+reversed = reversed + number + "."
  console.log(reversed);
+
+
+
+
+
+reversed *= 10;
+reversed += number % 10;
+number -= number % 10;
+number /= 10;
