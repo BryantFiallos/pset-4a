@@ -11,9 +11,11 @@ while (number < 1 || number > Number.MAX_SAFE_INTEGER || Number.isNaN(number) ||
  while (number > 10) {
    digit = number % 10;
    reversed = reversed + digit + ", ";
+   number -= digit
    number -= number % 10;
    number /= 10;
  }
 
 reversed = reversed + number + "."
- console.log(reversed);
+
+console.log(reversed);
