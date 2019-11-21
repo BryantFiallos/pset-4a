@@ -8,11 +8,11 @@ let divisor = 0;
 do {
   value = Number(readlineSync.question("Non-negative integer: "));
   divisor = divisor + 1;
-  if (value > 0) {
+  if (value >= 0) {
     sum = sum + value;
   }
 }
-while (value > 0)
+while (value >= 0)
 
 let mean = sum / (divisor - 1)
 
