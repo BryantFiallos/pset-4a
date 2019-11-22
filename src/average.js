@@ -18,5 +18,5 @@ while ((integer >= 0) || Number.isNaN(integer) || divisor == 0)
 
 let mean = sum / divisor
 
-let average = mean.toLocaleString("en", { minimumFractionDigits: 0, maximumFractionDigits: 3});
+let average = mean.toLocaleString("en", { minimumFractionDigits: 3, maximumFractionDigits: 3});
 console.log("\n" + average + ".");
