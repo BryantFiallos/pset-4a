@@ -1,15 +1,18 @@
 const readlineSync = require("readline-sync");
+let fibonacci1 = 0
+let fibonacci2 = 1
+let fibonacci3 = 0;
+let integer = 0
+console.log();
+do{
+  integer = Number(readlineSync.question("Positive integer: "));
+} while (integer < 1 || integer > 78 || !Number.isInteger(integer) || Number.isNaN(integer))
 
-const PHI = (Math.sqrt(5) + 1) / 2
-const INVERSE_PHI = (Math.sqrt(5) - 1) / 2
-
-let nth_term = 0;
-let n = Number(readlineSync.question("\nPositive integer: "));
-
-while(n < 1 || n > 78){
-  n = Number(readlineSync.question("Positive integer: "));
+for (i = 1; i <= integer; i++) {
+  fibonacci3 = fibonacci1 + fibonacci2
+  fibonacci2 = fibonacci1
+  fibonacci1 = fibonacci3
 }
 
-nth_term = Math.ceil((Math.pow(PHI, n) - (Math.pow((INVERSE_PHI * -1), n))) / Math.sqrt(5));
-nth_term = nth_term.toLocaleString("en", {maximumFractionDigits: 0, minimumFractionDigits: 0});
-console.log("\n" + nth_term + ".\n");
+
+console.log("\n" + fibonacci1 + ".")
