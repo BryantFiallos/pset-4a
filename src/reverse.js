@@ -18,4 +18,4 @@ while (number < 1 || number > Number.MAX_SAFE_INTEGER || Number.isNaN(number) ||
 
 reversed = reversed + number + "."
 
-console.log(reversed);
+console.log("\n" + reversed + "\n");

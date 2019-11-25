@@ -20,4 +20,4 @@ else if (lowerBound % 2 !== 0) {
 }
 
 sum = sum.toLocaleString("en");
-console.log("\n" + sum + ".");
+console.log("\n" + sum + ".\n");

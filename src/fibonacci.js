@@ -14,5 +14,5 @@ for (i = 1; i <= integer; i++) {
   fibonacci1 = fibonacci3
 }
 
-
-console.log("\n" + fibonacci1 + ".")
+fibonacci1 = fibonacci1.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, '$1,');
+console.log("\n" + fibonacci1 + ".\n")

@@ -16,8 +16,8 @@ for (var x = 2; x < integer; x++) {
   }
 }
 if (prime == "no") {
-    console.log("\nNot prime.")
+    console.log("\nNot prime.\n")
 }
 else {
-  console.log("\nPrime.")
+  console.log("\nPrime.\n")
 }
